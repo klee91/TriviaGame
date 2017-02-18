@@ -1,0 +1,169 @@
+html,body {
+    height:100%;
+}
+
+body {
+	background: url(../images/lotr-background.jpg) center fixed no-repeat;
+	font-family: 'Sansita', sans-serif;
+	font-size: 21px;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:3s;
+  -moz-animation-duration:3s;
+  animation-duration:3s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.fade-in.three {	
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.fade-in.restart {
+
+}
+
+#title {
+	display: block;
+	margin:auto;
+	padding: 20px;
+	width:50%;
+	left: 100px;
+	clear: both;
+}
+
+
+#a {
+	display: block;
+	margin:auto;
+	width:27%;
+	padding: 10px;
+	position: relative;
+	bottom: 70px;
+	left: 0px;
+	clear: both;
+}
+
+#game {
+	margin: auto;
+	width: 80%;
+	height: 400px;
+	position: relative;
+	left: 0px;
+	bottom: 100px;
+	clear:both;
+}
+
+#quiz {
+	font-family: 'Sansita', Arial, sans-serif;
+	margin: auto;
+	color: #FFF;
+	padding: 15px 0px 15px 50px; 
+}
+
+#time-left {
+	background-image: url("../images/black-mamba.png");
+	background-color: #2e0006;
+	border: solid 2px #2e0006;
+	border-radius: 3px;
+	color: #FFF;
+	padding: 15px;
+	top: 500px;
+	right: 125px;
+	position: fixed;
+	float: right;
+
+}
+
+
+#start {
+	display: block;
+	margin: auto;
+	margin-top: 180px;
+	height: 13%;
+	width: 10%;
+	padding: 0.5%;
+	position: relative;
+	border-radius: 4px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#757F9A, #D7DDE8);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	border: none;
+}
+
+#start:hover {
+ color: rgba(100, 255, 255, 1);
+ box-shadow: 0 5px 15px rgb(164,211,238);
+ text-shadow: 0 0.5px 0.5px rgb(164,211,238);
+}
+
+li {
+	list-style-type: none;
+}
+
+.button-choice {
+	width: 400px;
+	height: 65px;
+	margin: 0.5%;
+	font-family: 'Sansita', Arial, sans-serif;
+}
+
+.button-choice:hover {
+	box-shadow: 0 5px 15px rgb(164,211,238);
+}
+
+#cor-or-inc {
+	color: #FFF;
+	padding: 10px;
+}
+
+.newGame {
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+	height: 13%;
+	width: 10%;
+	padding: 0.5%;
+	position: relative;
+	border-radius: 4px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#757F9A, #D7DDE8);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	border: none;
+}
+
+.newGame:hover {
+ color: rgba(100, 255, 255, 1);
+ box-shadow: 0 5px 15px rgb(164,211,238);
+ text-shadow: 0 0.5px 0.5px rgb(164,211,238);
+}
