@@ -83,7 +83,7 @@ function startGame() {
 	displayQuestion(triviaCount);
 	displayChoices(triviaCount);
 	$("#time-left").toggle();
-	myInterval = setInterval(countdown, 6000)
+	myInterval = setInterval(countdown, 1000)
 }
 
 //timer of 30 seconds. 
@@ -177,13 +177,13 @@ function displayCorOrInc() {
 		displayGif();
 		wins = wins + 1;
 		triviaCount++;
-		setTimeout(nextQuestion, 1000);
+		setTimeout(nextQuestion, 6000);
 	} else if (rightOrWrong === false) {
 		$('#cor-or-inc').html("Wrong, the correct answer is " + trivia[triviaCount].correctAnswer);
 		displayGif();
 		losses = losses +1;
 		triviaCount++;
-		setTimeout(nextQuestion, 1000);
+		setTimeout(nextQuestion, 6000);
 	}
 
 }
