@@ -83,7 +83,7 @@ function startGame() {
 	displayQuestion(triviaCount);
 	displayChoices(triviaCount);
 	$("#time-left").toggle();
-	myInterval = setInterval(countdown, 1000)
+	myInterval = setInterval(countdown, 6000)
 }
 
 //timer of 30 seconds. 
@@ -144,8 +144,7 @@ function nextQuestion() {
 
 	if (triviaCount == 10) {
 		reset();
-		// $('#start').toggle();
-		// $('#start').empty();
+		
 		$('#quiz').html("Correct : " + wins + "<br>" + "Incorrect : " + losses).css({"color": "white", "margin-right": "40px"});
 		var restart = $('<button>');
 		restart.addClass('newGame').html("Restart").appendTo('#cor-or-inc');
@@ -213,7 +212,7 @@ function reset() {
 	$('#time-left').html(" ");
 	timer = 30;
 	clearInterval(myInterval);
-	// clearInterval(myQuestion);
+	
 }
 
 
